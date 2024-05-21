@@ -1,0 +1,128 @@
+a)  def calcular_numero_de_bombons(dinheiro, preco_bombom):
+    """
+    Calcula o número máximo de bombons que podem ser comprados com o dinheiro disponível.
+    
+    Parâmetros:
+    dinheiro (float): A quantidade de dinheiro disponível.
+    preco_bombom (float): O preço de um bombom.
+    
+    Retorna:
+    int: O número máximo de bombons que podem ser comprados.
+    """
+    return int(dinheiro // preco_bombom)
+
+def calcular_troco(dinheiro, preco_bombom):
+    """
+    Calcula o troco que resta após comprar o máximo de bombons possíveis.
+    
+    Parâmetros:
+    dinheiro (float): A quantidade de dinheiro disponível.
+    preco_bombom (float): O preço de um bombom.
+    
+    Retorna:
+    float: O troco restante após a compra dos bombons.
+    """
+    numero_de_bombons = calcular_numero_de_bombons(dinheiro, preco_bombom)
+    troco = dinheiro - (numero_de_bombons * preco_bombom)
+    return troco
+
+# Exemplo de uso
+dinheiro_disponivel = 10.0  # R$
+preco_do_bombom = 1.5       # R$
+
+
+
+
+ 2)  def bombom(dinheiro, preco):
+    """
+    Calcula o número máximo de bombons que podem ser comprados e o troco restante.
+    
+    Parâmetros:
+    dinheiro (float): A quantidade de dinheiro disponível.
+    preco (float): O preço de um bombom.
+    
+    Retorna:
+    tuple: Uma tupla contendo o número de bombons (int) e o troco (float).
+    """
+    num_bombons = int(dinheiro // preco)
+    troco = dinheiro % preco
+    return num_bombons, troco
+
+def dinheiro_para_um_bombom_a_mais(dinheiro, preco):
+    """
+    Calcula quanto dinheiro adicional é necessário para comprar um bombom a mais.
+    
+    Parâmetros:
+    dinheiro (float): A quantidade de dinheiro disponível.
+    preco (float): O preço de um bombom.
+    
+    Retorna:
+    float: A quantidade de dinheiro adicional necessária.
+    """
+    _, troco = bombom(dinheiro, preco)
+    adicional = preco - troco if troco < preco else 0
+    return adicional
+
+# Exemplo de uso
+dinheiro_disponivel = 10.0  # R$
+preco_do_bombom = 1.5       # R$
+
+# Parte a
+numero_de_bombons, troco_restante = bombom(dinheiro_disponivel, preco_do_bombom)
+print(f"Número de bombons que podem ser comprados: {numero_de_bombons}")
+print(f"Troco restante: R$ {troco_restante:.2f}")
+
+# Parte b
+dinheiro_necessario = dinheiro_para_um_bombom_a_mais(dinheiro_disponivel, preco_do_bombom)
+print(f"Dinheiro adicional necessário para comprar um bombom a mais: R$ {dinheiro_necessario:.2f}")
+
+
+numero_de_bombons = calcular_numero_de_bombons(dinheiro_disponivel, preco_do_bombom)
+troco_restante = calcular_troco(dinheiro_disponivel, preco_do_bombom)
+
+print(f"Número de bombons que podem ser comprados: {numero_de_bombons}")
+print(f"Troco restante: R$ {troco_restante:.2f}")
+
+
+
+3) def bombom(dinheiro, preco):
+    """
+    Calcula o número máximo de bombons que podem ser comprados e o troco restante.
+    
+    Parâmetros:
+    dinheiro (float): A quantidade de dinheiro disponível.
+    preco (float): O preço de um bombom.
+    
+    Retorna:
+    tuple: Uma tupla contendo o número de bombons (int) e o troco (float).
+    """
+    num_bombons = dinheiro // preco
+    troco = dinheiro % preco
+    return num_bombons, troco
+
+def maisbombom(dinheiro, preco):
+    """
+    Calcula quanto dinheiro adicional é necessário para comprar um bombom a mais.
+    
+    Parâmetros:
+    dinheiro (float): A quantidade de dinheiro disponível.
+    preco (float): O preço de um bombom.
+    
+    Retorna:
+    float: A quantidade de dinheiro adicional necessária.
+    """
+    _, troco = bombom(dinheiro, preco)
+    return preco - troco
+
+# Exemplo de uso
+dinheiro_disponivel = 10.0  # R$
+preco_do_bombom = 1.5       # R$
+
+# Parte a
+numero_de_bombons, troco_restante = bombom(dinheiro_disponivel, preco_do_bombom)
+print(f"Número de bombons que podem ser comprados: {numero_de_bombons}")
+print(f"Troco restante: R$ {troco_restante:.2f}")
+
+# Parte b
+dinheiro_necessario = maisbombom(dinheiro_disponivel, preco_do_bombom)
+print(f"Dinheiro adicional necessário para comprar um bombom a mais: R$ {dinheiro_necessario:.2f}")
