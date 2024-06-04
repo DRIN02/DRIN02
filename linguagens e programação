@@ -1,0 +1,57 @@
+
+ Python:
+
+Python é uma linguagem de programação de alto nível, conhecida por sua simplicidade e legibilidade. É frequentemente usada em desenvolvimento web, análise de dados, automação de tarefas e muito mais.
+
+Exemplo de código mínimo em Python (Hello World):
+
+```python
+print("Hello, world!")
+```
+
+Para executar este código, você pode salvar em um arquivo com extensão `.py` e, em seguida, no terminal ou prompt de comando, executar:
+
+```bash
+python meu_codigo.py
+```
+
+ JavaScript:
+
+JavaScript é uma linguagem de script usada principalmente para desenvolvimento web. É executada no lado do cliente em um navegador da web e, cada vez mais, no lado do servidor com o uso do Node.js.
+
+Exemplo de código mínimo em JavaScript (Hello World):
+
+```javascript
+console.log("Hello, world!");
+```
+
+Você pode executar este código em um navegador da web ou em um ambiente Node.js com o seguinte comando no terminal:
+
+```bash
+node meu_codigo.js
+```
+
+ C++:
+
+C++ é uma linguagem de programação de propósito geral, amplamente usada em sistemas de software, jogos, aplicativos de desktop, entre outros. É conhecida por sua eficiência e desempenho, mas também por ser mais complexa em comparação com Python e JavaScript.
+
+Exemplo de código mínimo em C++ (Hello World):
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+```
+
+Para compilar e executar este código, você pode usar um compilador C++ como o g++:
+
+```bash
+g++ meu_codigo.cpp -o meu_programa
+./meu_programa
+```
+
+Esses exemplos ilustram algumas diferenças entre essas linguagens, como sintaxe, estilo e uso. Python é conhecido por sua simplicidade e facilidade de aprendizado, JavaScript por sua ubiquidade na web e C++ por sua eficiência e controle de baixo nível.
+
