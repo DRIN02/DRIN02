@@ -1,0 +1,30 @@
+
+ Estrutura de Repetição (Loop - for loop):
+
+Um loop `for` é usado para iterar sobre uma sequência (como uma lista, tupla, dicionário, etc.) ou um intervalo de números.
+
+```python
+# Exemplo de um loop for que imprime os números de 1 a 5
+for i in range(1, 6):
+    print(i)
+```
+
+Este código imprimirá os números de 1 a 5.
+
+ Estrutura de Tomada de Decisão (Condicional - if-else):
+
+Uma estrutura `if-else` é usada para executar um bloco de código se uma condição for verdadeira e outro bloco de código se a condição for falsa.
+
+```python
+ Exemplo de uma estrutura if-else que verifica se um número é par ou ímpar
+numero = 7
+
+if numero % 2 == 0:
+    print(numero, "é um número par.")
+else:
+    print(numero, "é um número ímpar.")
+```
+
+Este código verifica se o número é par ou ímpar e imprime uma mensagem correspondente.
+
+Esses são exemplos simples, mas essenciais, de estruturas de repetição e tomada de decisão em Python. Elas são fundamentais para controlar o fluxo de um programa e executar diferentes ações com base nas condições fornecidas. Se precisar de mais exemplos ou explicações, estou aqui para ajudar!
